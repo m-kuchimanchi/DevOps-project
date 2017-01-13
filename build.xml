@@ -1,0 +1,23 @@
+<project name="sample">
+<property name="name" value="sample"/>
+<path id="catalina-ant-classpath"> 
+<fileset dir="C:\AppTools\apache-tomcat-8.0.37-windows-x64\lib"> 
+<include name="catalina-ant.jar"/> 
+</fileset> 
+</path> 
+
+<target name="install-service">
+  <exec executable="C:\AppTools\apache-tomcat-8.0.37-windows-x64\bin\service.bat" >
+<arg value="install"/>
+</exec> 
+</target>
+
+
+<target name="uninstall-service">
+  <exec executable="C:\AppTools\apache-tomcat-8.0.37-windows-x64\bin\service.bat" >
+<arg value="uninstall"/>
+</exec>       
+</target>      
+  
+
+</project>
