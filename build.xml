@@ -1,4 +1,4 @@
-<project name="sample">
+<project name="sample" default="uninstall-service">
 <property name="name" value="sample"/>
 
 <target name="install-service">
